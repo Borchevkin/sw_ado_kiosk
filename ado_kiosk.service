@@ -1,0 +1,15 @@
+[Unit]
+Description=Azure DevOps Dashboard Kiosk
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u /home/pi/sw_ado_kiosk/ado_kiosk.py
+WorkingDirectory=/home/pi/sw_ado_kiosk/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+RestartSec=30
+User=pi
+
+[Install]
+WantedBy=multi-user.target
