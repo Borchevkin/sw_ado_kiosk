@@ -142,7 +142,7 @@ def main():
     url = os.getenv("ADO_KIOSK_URL")
     login = os.getenv("ADO_KIOSK_LOGIN")
     password = os.getenv("ADO_KIOSK_PASSWORD")
-    refresh_rate = int(os.getenv("ADO_KIOSK_REFRESH_RATE"))
+    refresh_rate = int(os.getenv("ADO_KIOSK_REFRESH_RATE_SEC"))
 
     #TODO add env checking 
 
